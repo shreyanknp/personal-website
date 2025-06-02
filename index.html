@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shreyank N P | Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    .fade-in-up {
+      opacity: 1 !important;
+      transform: translateY(0px) !important;
+      transition: all 0.6s ease-out;
+    }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- Navbar -->
+  <header class="bg-white shadow-md sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
+      <h1 class="text-xl font-bold">Shreyank N P</h1>
+      <nav class="space-x-4">
+        <a href="#about" class="hover:text-blue-600">About</a>
+        <a href="#skills" class="hover:text-blue-600">Skills</a>
+        <a href="#experience" class="hover:text-blue-600">Experience</a>
+        <a href="#projects" class="hover:text-blue-600">Projects</a>
+        <a href="#contact" class="hover:text-blue-600">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="text-center py-16 bg-gradient-to-r from-blue-100 to-purple-100">
+    <h2 class="text-4xl font-bold mb-4">Hey, I'm Shreyank 👋</h2>
+    <p class="text-lg max-w-xl mx-auto">A Data Analyst and aspiring Data Scientist pursuing M.Sc. in Applied Data Science and Analytics.</p>
+    <div class="mt-6 space-x-4">
+      <a href="#contact" class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition">Contact Me</a>
+      <a href="resume.pdf" class="text-blue-600 underline">View Resume</a>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="py-12 max-w-4xl mx-auto px-4 fade-section">
+    <h3 class="text-2xl font-semibold mb-4">About Me</h3>
+    <p>I’m passionate about solving problems using data and technology. With a solid foundation in statistics, machine learning, and data engineering, I enjoy creating solutions that bring insights and impact. I’m currently open to part-time opportunities around Heidelberg.</p>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="bg-gray-100 py-12 px-4 fade-section">
+    <div class="max-w-4xl mx-auto">
+      <h3 class="text-2xl font-semibold mb-6">Skills</h3>
+      <div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
+        <span class="bg-white p-3 rounded shadow hover:bg-blue-100 transition">Python</span>
+        <span class="bg-white p-3 rounded shadow hover:bg-blue-100 transition">SQL</span>
+        <span class="bg-white p-3 rounded shadow hover:bg-blue-100 transition">Power BI</span>
+        <span class="bg-white p-3 rounded shadow hover:bg-blue-100 transition">SAS</span>
+        <span class="bg-white p-3 rounded shadow hover:bg-blue-100 transition">PySpark</span>
+        <span class="bg-white p-3 rounded shadow hover:bg-blue-100 transition">TensorFlow</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience" class="py-12 max-w-4xl mx-auto px-4 fade-section">
+    <h3 class="text-2xl font-semibold mb-6">Experience</h3>
+    <div>
+      <h4 class="text-xl font-bold">Freelance Data Analyst</h4>
+      <p class="text-gray-700 text-sm">Jan 2024 – Present</p>
+      <ul class="list-disc list-inside mt-2 text-gray-700">
+        <li>Worked on data visualization and ML model evaluation projects.</li>
+        <li>Developed Streamlit dashboards and deployed Python apps for clients.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="bg-gray-100 py-12 px-4 fade-section">
+    <div class="max-w-4xl mx-auto">
+      <h3 class="text-2xl font-semibold mb-6">Projects</h3>
+      <div class="grid gap-6 md:grid-cols-2">
+        <div class="bg-white p-4 rounded shadow hover:shadow-lg transition">
+          <h4 class="font-bold">Stock Market Analysis</h4>
+          <p class="text-gray-700 text-sm">Analyzed synthetic stock data using PySpark and created an end-to-end pipeline.</p>
+        </div>
+        <div class="bg-white p-4 rounded shadow hover:shadow-lg transition">
+          <h4 class="font-bold">Neural Network Classifier</h4>
+          <p class="text-gray-700 text-sm">Built an MNIST classifier using Keras and optimized it with GridSearchCV.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-12 max-w-4xl mx-auto px-4 fade-section">
+    <h3 class="text-2xl font-semibold mb-6">Contact</h3>
+    <p>You can reach out to me at:</p>
+    <ul class="mt-2 text-blue-600 space-y-2">
+      <li>Email: <a href="mailto:shreyank@example.com">shreyank@example.com</a></li>
+      <li>LinkedIn: <a href="https://www.linkedin.com/in/shreyanknp">linkedin.com/in/shreyanknp</a></li>
+      <li>GitHub: <a href="https://github.com/shreyanknp">github.com/shreyanknp</a></li>
+    </ul>
+  </section>
+
+  <footer class="text-center text-sm py-6 text-gray-600">
+    © 2025 Shreyank N P. All rights reserved.
+  </footer>
+
+  <!-- Scroll to Top Button -->
+  <button id="scrollTopBtn"
+    class="fixed bottom-6 right-6 bg-blue-600 text-white p-3 rounded-full shadow-md hover:bg-blue-700 hidden z-50">
+    ↑
+  </button>
+
+  <!-- Scripts -->
+  <script>
+    // Smooth Scroll
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener("click", function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute("href")).scrollIntoView({
+          behavior: "smooth"
+        });
+      });
+    });
+
+    // Fade-in Animation on Scroll
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('fade-in-up');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.fade-section').forEach(section => {
+      section.classList.add('opacity-0', 'translate-y-10');
+      observer.observe(section);
+    });
+
+    // Scroll to Top Button
+    const scrollBtn = document.getElementById("scrollTopBtn");
+    window.onscroll = () => {
+      scrollBtn.style.display = window.scrollY > 300 ? "block" : "none";
+    };
+    scrollBtn.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  </script>
+
+</body>
+</html>
